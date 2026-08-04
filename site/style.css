@@ -1,0 +1,225 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#ECE5DD;
+
+    font-family:Segoe UI, sans-serif;
+
+}
+
+.container{
+
+    width:900px;
+
+    margin:40px auto;
+
+}
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+header h1{
+
+    color:#5B3A29;
+
+    font-size:42px;
+
+}
+
+header p{
+
+    color:#555;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    text-align:center;
+
+}
+
+.temperature{
+
+    margin-top:20px;
+
+    font-size:60px;
+
+    color:#6F4E37;
+
+    font-weight:bold;
+
+}
+
+.form{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:30px;
+
+    align-items:flex-end;
+
+}
+
+.campo{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+label{
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+select{
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #CCC;
+
+    font-size:16px;
+
+}
+
+button{
+
+    padding:14px 30px;
+
+    background:#6F4E37;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#523726;
+
+}
+
+.resultado{
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.status{
+
+    margin-top:20px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.excelente{
+
+    color:#27AE60;
+
+}
+
+.boa{
+
+    color:#F39C12;
+
+}
+
+.ruim{
+
+    color:#E74C3C;
+
+}
+
+.historico{
+
+    margin-top:30px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    
+    border-radius:10px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+th{
+
+    background:#6F4E37;
+
+    color:white;
+
+    padding:12px;
+
+}
+
+td{
+
+    text-align:center;
+
+    padding:12px;
+
+    border-bottom:1px solid #DDD;
+
+}

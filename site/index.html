@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Coffee Quality Monitor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>☕ Coffee Quality Monitor</h1>
+
+        <p>Sistema Inteligente de Avaliação da Qualidade da Bebida</p>
+
+    </header>
+
+    <section class="card">
+
+        <h2>Temperatura Atual</h2>
+
+        <div class="temperature">
+
+            <span id="temp">92°C</span>
+
+        </div>
+
+    </section>
+
+    <section class="form">
+
+        <div class="campo">
+
+            <label>Moagem</label>
+
+            <select id="moagem">
+
+                <option>Fina</option>
+                <option selected>Média</option>
+                <option>Grossa</option>
+
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label>Torra</label>
+
+            <select id="torra">
+
+                <option>Clara</option>
+                <option selected>Média</option>
+                <option>Escura</option>
+
+            </select>
+
+        </div>
+
+        <button id="avaliar">
+
+            Avaliar Café
+
+        </button>
+
+    </section>
+
+    <section class="resultado">
+
+        <h2>Resultado</h2>
+
+        <div class="status excelente">
+
+            🟢 Excelente
+
+        </div>
+
+    </section>
+
+    <section class="historico">
+
+        <h2>Histórico</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Hora</th>
+                <th>Resultado</th>
+
+            </tr>
+
+            <tr>
+
+                <td>10:22</td>
+                <td>Excelente</td>
+
+            </tr>
+
+            <tr>
+
+                <td>10:18</td>
+                <td>Boa</td>
+
+            </tr>
+
+            <tr>
+
+                <td>10:10</td>
+                <td>Ruim</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+</div>
+
+</body>
+
+</html>
