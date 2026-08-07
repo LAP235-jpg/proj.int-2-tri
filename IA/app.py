@@ -6,6 +6,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+temperatura_atual = 69
+
 @app.route("/")
 def home():
     return "Coffee Quality Monitor API"
@@ -15,25 +17,27 @@ def predict():
 
     dados = request.json
 
-    moagem = dados["moagem"]
-    torra = dados["torra"]
-
-    # Temperatura fixa apenas para teste
-    temperatura = 70
-
     resultado = classificar(
-        temperatura,
-        moagem,
-        torra
+
+        temperatura_atual,
+        dados["moagem"],
+        dados["torra"]
+
     )
 
     return jsonify({
 
-        "temperatura": temperatura,
-        "moagem": moagem,
-        "torra": torra,
+        "temperatura": temperatura_atual,
         "resultado": resultado
 
     })
+
+@app.route("/temperatura")
+def temperatura():
+    temperatura = temperatura_atual
+    return jsonify({
+        "temperatura": temperatura
+    })
+
 if __name__ == "__main__":
     app.run(debug=True)
