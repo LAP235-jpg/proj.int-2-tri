@@ -11,7 +11,7 @@ RM := rm -rf
 -include USB_DEVICE/Target/subdir.mk
 -include USB_DEVICE/App/subdir.mk
 -include Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
--include Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -32,34 +32,34 @@ endif
 
 -include ../makefile.defs
 
-BUILD_ARTIFACT_NAME := ProjInt2
+BUILD_ARTIFACT_NAME := ProjintOFC2
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME).$(BUILD_ARTIFACT_EXTENSION)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-ProjInt2.elf \
+ProjintOFC2.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-ProjInt2.list \
+ProjintOFC2.list \
 
 OBJCOPY_BIN += \
-ProjInt2.bin \
+ProjintOFC2.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: ProjInt2.elf secondary-outputs
+main-build: ProjintOFC2.elf secondary-outputs
 
 # Tool invocations
-ProjInt2.elf: $(OBJS) $(USER_OBJS) C:\stm32-2026\ProjInt2\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "ProjInt2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\stm32-2026\ProjInt2\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ProjInt2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ProjintOFC2.elf: $(OBJS) $(USER_OBJS) C:\stm32-2026\ProjintOFC2\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "ProjintOFC2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\stm32-2026\ProjintOFC2\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ProjintOFC2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -68,13 +68,13 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-ProjInt2.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "ProjInt2.list"
+ProjintOFC2.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "ProjintOFC2.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-ProjInt2.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "ProjInt2.bin"
+ProjintOFC2.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "ProjintOFC2.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
