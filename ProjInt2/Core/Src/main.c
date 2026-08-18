@@ -155,22 +155,17 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
-    {
-        adc_value = HAL_ADC_GetValue(&hadc1);
+  while (1)
+{
+    char teste[] = "TESTE\r\n";
 
+    CDC_Transmit_FS(
+        (uint8_t*)teste,
+        strlen(teste)
+    );
 
-        int temperatura = temp();
-
-        Pacote(temperatura);
-
-        CDC_Transmit_FS(
-            (uint8_t *)pacote,
-            strlen(pacote)
-        );
-
-        HAL_Delay(100);
-    }
+    HAL_Delay(1000);
+}
 
     /* USER CODE END 3 */
   }
