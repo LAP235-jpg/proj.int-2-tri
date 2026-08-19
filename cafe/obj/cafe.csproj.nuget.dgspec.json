@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj": {}
+    "C:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj": {
+    "C:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj",
+        "projectUniqueName": "C:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj",
         "projectName": "cafe",
-        "projectPath": "c:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj",
+        "projectPath": "C:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj",
         "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\obj\\",
+        "outputPath": "C:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config",

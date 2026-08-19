@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wVq2r7Kl+N0=",
+  "dgSpecHash": "YV749+m/gSA=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj",
+  "projectFilePath": "C:\\Users\\Alunos\\Desktop\\proj.int-2-tri-main\\proj.int-2-tri\\cafe\\cafe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alunos\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\10.0.11\\runtime.android-arm.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
     "C:\\Users\\Alunos\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\10.0.11\\runtime.android-arm64.runtime.native.system.io.ports.10.0.11.nupkg.sha512",
