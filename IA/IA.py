@@ -18,16 +18,16 @@ from collections import Counter
 
 dados = [
 
-    [82, 2, 0, "Ruim"],
-    [85, 2, 0, "Ruim"],
-    [87, 1, 0, "Boa"],
-    [89, 1, 1, "Boa"],
-    [90, 1, 1, "Excelente"],
-    [91, 1, 1, "Excelente"],
-    [92, 1, 1, "Excelente"],
-    [93, 1, 2, "Boa"],
-    [95, 0, 2, "Boa"],
-    [97, 0, 2, "Ruim"]
+    [8.2, 2, 0, "Ruim"],
+    [8.5, 2, 0, "Ruim"],
+    [8.7, 1, 0, "Boa"],
+    [8.9, 1, 1, "Boa"],
+    [9.0, 1, 1, "Excelente"],
+    [9.1, 1, 1, "Excelente"],
+    [9.2, 1, 1, "Excelente"],
+    [9.3, 1, 2, "Boa"],
+    [9.5, 0, 2, "Boa"],
+    [9.7, 0, 2, "Ruim"]
 
 ]
 
@@ -87,20 +87,19 @@ def knn(ponto, dados, k):
 
 
 
-def classificar(temperatura, moagem, torra, k=3):  #funcao de classificar
+def classificar(temperatura, moagem, torra, k=3):
+
+    temperatura = temperatura / 10
 
     moagem = moagem_map[moagem]
-
     torra = torra_map[torra]
 
     ponto = [
-
         temperatura,
         moagem,
         torra
-
     ]
 
-    resultado = knn(ponto,dados,k)
+    resultado = knn(ponto, dados, k)
 
     return resultado

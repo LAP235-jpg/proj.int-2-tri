@@ -34,3 +34,39 @@ C:\Users\Alunos\Desktop\proj.int-2-tri-main\proj.int-2-tri\cafe\obj\Debug\net9.0
 C:\Users\Alunos\Desktop\proj.int-2-tri-main\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.pdb
 C:\Users\Alunos\Desktop\proj.int-2-tri-main\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.genruntimeconfig.cache
 C:\Users\Alunos\Desktop\proj.int-2-tri-main\proj.int-2-tri\cafe\obj\Debug\net9.0\ref\cafe.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\cafe.exe
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\cafe.deps.json
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\cafe.runtimeconfig.json
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\cafe.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\cafe.pdb
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\System.IO.Ports.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\unix\lib\net9.0\System.IO.Ports.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.IO.Ports.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.csproj.AssemblyReference.cache
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.AssemblyInfoInputs.cache
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.AssemblyInfo.cs
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.csproj.CoreCompileInputs.cache
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.sourcelink.json
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.csproj.Up2Date
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\refint\cafe.dll
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.pdb
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\cafe.genruntimeconfig.cache
+C:\Users\LUIGI\Desktop\new project\proj.int-2-tri\cafe\obj\Debug\net9.0\ref\cafe.dll
