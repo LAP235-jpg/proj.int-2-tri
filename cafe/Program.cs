@@ -12,7 +12,7 @@ namespace MeuPrograma
     {
         static HttpClient client = new HttpClient();
 
-        static SerialPort stm32 = new SerialPort("COM7", 115200);
+        static SerialPort stm32 = new SerialPort("COM4", 115200);
 
         static async Task Main(string[] args)
         {
@@ -91,8 +91,11 @@ namespace MeuPrograma
             {
                 Console.WriteLine("Pacote válido!");
 
-                // Envia a temperatura para o Flask
-                await EnviarTemperatura(temperatura);
+                // Valores utilizados pela IA
+                string moagem = "Media";
+                string torra = "Media";
+
+                await EnviarDados(temperatura, moagem, torra);
             }
             else
             {
@@ -101,14 +104,21 @@ namespace MeuPrograma
         }
 
 
-        static async Task EnviarTemperatura(int temperatura)
+        static async Task EnviarDados(
+            int temperatura,
+            string moagem,
+            string torra)
         {
             var dados = new
             {
-                temperatura = temperatura
+                temperatura = temperatura,
+                moagem = moagem,
+                torra = torra
             };
 
             string json = JsonSerializer.Serialize(dados);
+
+            Console.WriteLine($"Enviando para Flask: {json}");
 
             StringContent conteudo = new StringContent(
                 json,
@@ -119,17 +129,22 @@ namespace MeuPrograma
             try
             {
                 HttpResponseMessage resposta = await client.PostAsync(
-                    "http://127.0.0.1:5000/predict",
+                    "http://127.0.0.1:5000/temperatura",
                     conteudo
                 );
 
-                string retorno = await resposta.Content.ReadAsStringAsync();
+                string retorno =
+                    await resposta.Content.ReadAsStringAsync();
 
-                Console.WriteLine($"Resposta do Flask: {retorno}");
+                Console.WriteLine(
+                    $"Resposta do Flask: {retorno}"
+                );
             }
             catch (Exception erro)
             {
-                Console.WriteLine($"Erro ao enviar para o Flask: {erro.Message}");
+                Console.WriteLine(
+                    $"Erro ao enviar para o Flask: {erro.Message}"
+                );
             }
         }
 

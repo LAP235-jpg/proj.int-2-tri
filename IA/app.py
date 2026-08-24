@@ -6,8 +6,17 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
-# Guarda a última temperatura recebida pelo STM32
-ultima_temperatura = 0
+# ====================================================
+# SIMULAÇÃO DO STM32
+# ====================================================
+
+TEMPERATURA_SIMULADA = 30
+
+ultima_temperatura = 30
+
+# ====================================================
+# HISTÓRICO
+# ====================================================
 
 historico = []
 proximo_id = 1
@@ -18,7 +27,10 @@ def home():
     return "Coffee Quality Monitor API"
 
 
-# Recebe os dados da temperatura vindos do C#
+# ====================================================
+# RECEBE TEMPERATURA
+# ====================================================
+
 @app.route("/temperatura", methods=["POST"])
 def receber_temperatura():
 
@@ -38,7 +50,10 @@ def receber_temperatura():
     })
 
 
-# Faz a previsão da qualidade
+# ====================================================
+# PREVISÃO DA QUALIDADE
+# ====================================================
+
 @app.route("/predict", methods=["POST"])
 def predict():
 
@@ -62,13 +77,11 @@ def predict():
         "moagem": moagem,
         "torra": torra,
         "qualidade": resultado,
-        "data": datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        "data": "17/08/2026 18:33:23"
     }
 
-    # Adiciona ao histórico
     historico.append(medicao)
 
-    # Prepara o próximo ID
     proximo_id += 1
 
     return jsonify({
@@ -78,13 +91,21 @@ def predict():
         "resultado": resultado
     })
 
-#gerencia o histórico de previsões
+
+# ====================================================
+# HISTÓRICO
+# ====================================================
+
 @app.route("/historico", methods=["GET"])
 def obter_historico():
+
     return jsonify(historico)
 
 
-# Consulta a temperatura atual
+# ====================================================
+# CONSULTA TEMPERATURA
+# ====================================================
+
 @app.route("/temperatura", methods=["GET"])
 def temperatura():
 
@@ -94,6 +115,12 @@ def temperatura():
 
 
 if __name__ == "__main__":
+
+    print(
+        f"🌡️ MODO SIMULAÇÃO ATIVO | "
+        f"Temperatura: {TEMPERATURA_SIMULADA}°C"
+    )
+
     app.run(
         host="127.0.0.1",
         port=5000,
