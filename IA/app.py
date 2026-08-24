@@ -40,7 +40,7 @@ def receber_temperatura():
 
     temperatura = dados["temperatura"]
 
-    ultima_temperatura = temperatura
+    ultima_temperatura = temperatura*2
 
     print(f"Temperatura recebida: {temperatura}")
 
@@ -77,7 +77,7 @@ def predict():
         "moagem": moagem,
         "torra": torra,
         "qualidade": resultado,
-        "data": "17/08/2026 18:33:23"
+        "data": datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     }
 
     historico.append(medicao)
