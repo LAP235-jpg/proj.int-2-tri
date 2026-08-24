@@ -2,7 +2,7 @@
 
 > Sistema Inteligente de Avaliação da Qualidade do Café utilizando IoT e Machine Learning.
 
-![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/Status-Finalizado-brightgreen)
 ![STM32](https://img.shields.io/badge/STM32-Embedded-blue)
 ![Python](https://img.shields.io/badge/Python-ML-green)
 ![HTML](https://img.shields.io/badge/Frontend-Web-orange)
